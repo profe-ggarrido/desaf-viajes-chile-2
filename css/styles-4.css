@@ -1,0 +1,36 @@
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    .menu {
+        display: none; /* Oculta el menú en dispositivos móviles */
+        flex-direction: column; /* Apila los elementos verticalmente */
+        background-color: #2a69b6; /* Color de fondo del menú desplegable */
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+    }
+    .menu-toggle {
+        display: block; /* Muestra el botón de hamburguesa */
+        color: white;
+        font-size: 24px;
+        cursor: pointer;
+        padding: 15px;
+    }
+    .menu-toggle:hover {
+        background-color: #0e4787;
+    }
+    .menu.active {
+        display: flex; /* Muestra el menú desplegable cuando está activo */
+        position: static; /* Restaura la posición del menú */
+        flex-direction: row; /* Alinea los elementos horizontalmente */
+    }
+    .menu li {
+        margin: 0; /* Elimina el margen en los elementos del menú */
+        padding: 10px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* Añade una línea divisoria entre elementos */
+        width: 100%; /* Ajusta el ancho de los elementos */
+    }
+    .menu li:last-child {
+        border-bottom: none; /* Elimina la línea divisoria del último elemento */
+    }
+}
