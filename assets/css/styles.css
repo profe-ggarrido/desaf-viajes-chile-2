@@ -1,0 +1,79 @@
+/* *** STYLES.CSS ** */
+body{
+  background-color: black;
+  margin: 0px; /* Ajusta el espacio para la barra de navegación fija */
+  padding: 0px;
+}
+
+header{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+Estilos personalizados para el carrusel */
+#carouselExampleSlidesOnly {
+  height: 100vh; /* Hace que el carrusel ocupe toda la altura de la pantalla */
+}
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  color: #51e73e; /* Cambia el color de las flechas a blanco */
+}
+
+
+.carousel-item img {
+  width: 100%;
+  height: 100vh; /* Para mantener la proporción de aspecto */
+  object-fit: cover; /* Escala las imágenes para que cubran toda el área del contenedor */
+}
+/* aCÁ PONEMOS TRANSP EL AREA */
+.navbar {
+  background-color: transparent !important; /* Fondo transparente */
+}
+
+.navbar-toggler-icon {
+  background-color: white; /* Icono del botón de hamburguesa en blanco */
+}
+
+.navbar-toggler {
+  border-color: white; /* Color del borde del botón de hamburguesa */
+}
+
+.navbar-nav .nav-link {
+  color: white !important; /* Texto de los enlaces en blanco */
+}
+
+
+.navbar-brand img{
+  width: 100px;
+  border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) { 
+  .navbar-collapse {
+    background-color: rgb(216, 198, 198); 
+  }
+}
+
+
+@media (max-width: 768px) {
+  .carousel {
+      display: none; /* Oculta el carrusel */
+  }
+}
+

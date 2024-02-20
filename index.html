@@ -1,29 +1,129 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>nav-bar-1</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DES vIAJES cHILE-1</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@1,800&family=Raleway:ital@0;1&display=swap" rel="stylesheet">
+  <!-- Enlace al archivo de estilos de Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 
+  <!-- Enlace a la hoja de estilos personalizada -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <script src="assets/js/javascript.js"></script>
+
+        <!-- Enlaces  FONTAAWESOME -->
+        <script src="https://kit.fontawesome.com/42590f42f6.js" crossorigin="anonymous"></script>
+
+  
 </head>
+
 <body>
 
-    <header class="header"></header>
+  <!-- ****-- ACA VA HEADER --*** -->
+  <header>
 
-    <div class="logo">
-        <img src="/img/montaña chica-1.png" alt="Logo de la marca">
+
+<!-- Barra de navegación -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+
+      <a class="navbar-brand" href="#">
+      <img src="assets/img/logo-viajes.png" alt="">  
+      </a>
+
+      <!-- Botón de hamburguesa para dispositivos móviles -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Elementos del menú -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Quienes Somos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Destados</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+</nav>
+
+
+  <!-- *** AREA DE CARRUSEL *** -->
+ 
+  <!-- *** Carrusel controlado por un Identificador 'carouselExampleSlidesOnly ' u otro nombre*** -->
+
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+
+    
+  <!-- Botones de navegación "Izquierda" y "Derecha" -->
+  ---------------------------------------------------------
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Anterior</span>
+  </button>
+
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Siguiente</span>
+  </button>
+
+
+    <!-- ***** ZONA BOTONES SEÑAL CANT DE FOTOS DEL CARRUSEL *** -->
+    
+      <div class="carousel-indicators">  <!-- aqui se produce la transicion de una aotra slide-->
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+
+
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="3000">
+         <img src="assets/img/norte1.png" class="d-block w-2000" alt="Norte de chile"> <!--tiempo del paso slide con CLASS="d-block w-3 mil ahi ve usted"  -->
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="assets/img/Isla Pascua atardecer.jpg" class="d-block w-100" alt="Isla de Pascua Atardecer">
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="assets/img/Torres_paine-1.png" class="d-block w-100" alt="Torres del paine"> 
+      </div>
     </div>
 
-    <ul class="nav-links">
-        <li><a href="#">Servicios</a></li>
-        <li><a href="#">Proyectos</a></li>
-        <li><a href="#">Acerca de</a></li>
-    </ul>
-    
-    <a href="#" class="btn"><button>Contacto</button></a>
+  </div>
+
+
+
+</header>
+
+
+
+
+
+
+
+
+<!-- Contenido principal de la página -->
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+<!-- Scripts de Bootstrap (jQuery y Popper.js) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+<!-- Script de Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
 </html>
+
