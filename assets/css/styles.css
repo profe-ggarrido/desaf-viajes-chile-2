@@ -74,7 +74,7 @@ hr{
 }
 
 p{ 
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .texto-blanco{
@@ -89,10 +89,10 @@ p{
     }
 
 
+
+
     /* *** ESTILOS PARA EL FORMU *** */
-    
-
-
+ 
 
 section{
   margin: 120px;
@@ -105,6 +105,32 @@ input[type="text"] {
     width: 100%;
 }
 
+.btn-enviar {
+  background-color: rgb(88, 138, 199);
+  color: rgb(0, 0, 0); /* Por ejemplo, establecer el color del texto en blanco */
+  border: none;     /* Quitar el borde del botón */
+  margin-top: 10px; 
+  padding: 10px 20px;   /* Ajustar el relleno del botón */
+  border-radius: 5px;   /* Agregar bordes redondeados */
+  font-size: 16px;      /* Establecer el tamaño del texto */
+  font-weight: bold;
+ 
+}
+
+
+
+
+
+
+    /* *** ESTILOS PARA EL TARJETAS *** */
+
+.card {
+  color: blue;
+}
+
+.card-img-top {
+  height: 300px;
+}
 
 
 
@@ -121,7 +147,7 @@ input[type="text"] {
 
 
 @media (max-width: 768px) {
-  .carousel {
+  .container {
       display: none; /* Oculta el carrusel */
   }
 }
