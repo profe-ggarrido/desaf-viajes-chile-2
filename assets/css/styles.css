@@ -86,11 +86,16 @@ hr{
   border: 1px solid #51e73e;
 }
 
+.quienes-container{
+  
+  margin-left: 45px;
+  margin-right: 45px;
+}
 
 .container {
   width: 50%;
  /* max-width: 70%;  Establece el ancho máximo del contenedor  de quienes*/
-  margin: 0 auto; /* Centra el contenedor horizontalmente */
+  margin: 10px; /* Centra el contenedor horizontalmente */
 
 }
 
@@ -143,6 +148,7 @@ section{
 
 input[type="text"] {
     width: 100%;
+    border-radius: 5px;
 }
 
 .btn-enviar {
@@ -269,9 +275,17 @@ input[type="text"] {
 }
 
 
+@media (max-width: 500px) {
+  .quienes-container {
+      display: none; /* Oculta el FOOTER */
+      background-color: black;
+  }
+}
+
+
 @media (max-width: 768px) {
   .container {
-      display: none; /* Oculta el carrusel */
+      display: none; /* Oculta el FOOTER */
   }
 }
 
