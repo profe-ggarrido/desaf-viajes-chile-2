@@ -8,21 +8,21 @@
     <!-- Enlace al archivo de estilos de Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Enlace a la hoja de estilos personalizada -->
-    <link rel="stylesheet" href="assets/css/styles.css">
-
-    <script src="assets/js/javascript.js"></script>
-
+    
           <!-- Enlaces  FONTAAWESOME -->
     <script src="https://kit.fontawesome.com/42590f42f6.js" crossorigin="anonymous"></script>
+<!-- Enlace a la hoja de estilos personalizada -->
 
 
-  <!-- **es el 6.0.0 *** -->
-        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-VBwZKbwmCGl3rYynfy1h04wGTpNjiHQ0kRv2i+yn/AxF4BL/7dj5oDPvmIjL6DZn" crossorigin="anonymous"> -->
+    <script src="assets/js/javascript.js"></script>
+    
+    <link rel="stylesheet" href="assets/css/styles.css">
 
   
 </head>
 
+
+<!-- **** INICIO DE LA PAG **** -->
 <body>
 
   <!-- ****-- ACA VA HEADER --*** -->
@@ -30,40 +30,47 @@
 
 
 <!-- Barra de navegación -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-    <!-- <div class="container"> -->
 
-      <a class="navbar-brand" href="#">
-      <img src="assets/img/logo-viajes.png" width="300"  alt="logo empresa" >  
-      </a>
+<!-- *** CONTENEDOR GLOBAL DE LA BARRA DE NAV *** -->
 
-      <!-- Botón de hamburguesa para dispositivos móviles -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+<diV class="nav-container">
 
-      <!-- Elementos del menú -->
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Quienes Somos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Destados</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contacto</a>
-          </li>
-        </ul>
-      </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <!-- <div class="container"> -->
 
-    <!-- </div> -->
+          <a class="navbar-brand" href="#">
+          <img src="assets/img/logo-viajes.png" width="300"  alt="logo empresa">  
+          </a>
 
-</nav>
+          <!-- Botón de hamburguesa para dispositivos móviles -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
+          <!-- Elementos del menú -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#quienes-somos">Quienes Somos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#destacados">Destacados</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contacto">Contacto</a>
+                  </li>
+              </ul>
+          </div>
+
+        
+
+    </nav>
+
+<!-- *** FIN BARRA NAV -->
+</diV>   
 
   <!-- *** AREA DE CARRUSEL *** -->
  
@@ -114,8 +121,9 @@
 
 <!-- **** ROWS PARA QUIENES SOMOS **** -->
 <br>
-<p><H3>¿QUIENES SOMOS?</H3></p>
+<p><H3 id="quienes-somos" >¿QUIENES SOMOS?</H3></p>
 <hr>  <!-- linea de separacion fina -->
+
 
 <div class="container"> <!-- Contenedor WUIENES SOMOS -->
 
@@ -170,84 +178,87 @@
 
 
 
-<!-- **** zona para CARDS para 4 fotos **** -->
+<!-- **** zona TITUILO D E S T A C A D O Spara CARDS para 4 fotos **** -->
 <br>
-<p><H3>DESTACADOS</H3></p>
+<p><H3 id="destacados">DESTACADOS</H3></p>
 <hr>  <!-- linea de separacion fina -->
 
       
-<div class="container-fluid bg-light">
 
 
+<div class="custom-container">
 
-  <div class="row justify-content-center" style="background-color: black;">
+    <div class="row justify-content-center" style="background-color: black;">
 
-    <!-- **** ZONA DE 4 CARDS **** -->
-    <!-- ---------------------------------- -->
-
-    <!-- *** COL  PRIMERA TARJETA ***
-    ------------------------------ -->
-    <!-- <div class="col-md-4 col-sm-6"> Aplic disp medi use 4 col y en pequeñ use 6 -->
-
-       <div class="col-3">
+      <!-- **** ZONA DE 4 CARDS **** -->
+      <!-- ---------------------------------- -->
 
 
+      <!-- *** COL  PRIMERA TARJETA ***
+      ------------------------------ -->
+      <!-- <div class="col-md-4 col-sm-6"> Aplic disp medi use 4 col y en pequeñ use 6 -->
+
+        <div class="col-lg-3">
+
+
+            <div class="card">
+                <img src="assets/img/card1 - copia.jpg" class="card-img-top" alt="Card 1">
+                <div class="card-body">
+                    <h5 class="card-title"></h5>
+                    <p style="color: red;"class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio consequuntur molestiae, perferendis praesentium assumenda reprehenderit sunt sit impedit! Beatae cupiditate, optio voluptatibus obcaecati non quo dignissimos nobis error iusto eos. Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                    
+                </div>
+            </div>
+            
+        </div>
+
+        
+      <!-- *** COL  SEGUNDA TARJETA ***
+      ------------------------------ -->
+        <div class="col-lg-3">
+            <div class="card">
+                <img src="assets/img/card2 - copia.jpg" class="card-img-top" alt="Card 2">
+                <div class="card-body">
+                    <h5 class="card-title"></h5>
+                    <p style="color: red;" class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim ut optio suscipit accusantium commodi harum fugit eligendi illum excepturi. Exercitationem, accusamus? Maxime placeat eveniet nostrum odio qui cumque veritatis doloremque. Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                    
+                </div>
+            </div>
+        </div>
+
+        
+      <!-- *** COL TERCERA TARJETA ***
+      ------------------------------ -->
+        <div class="col-lg-3">
+            <div class="card">
+                <img src="assets/img/card3 - copia.jpg" class="card-img-top" alt="Card 3">
+                <div class="card-body">
+                    <h5 class="card-title"></h5>
+                    <p style="color: red;" class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione possimus reiciendis natus. Dolore accusamus iusto cum aliquid rem eaque fugiat ad. Dignissimos pariatur eos sint nostrum ipsum. Accusantium, quisquam eos. Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                    
+                </div>
+            </div>
+        </div>
+
+  <!-- *** COL cuarta TARJETA ***
+      ------------------------------ -->
+        <div class="col-lg-3">
           <div class="card">
-              <img src="assets/img/card1 - copia.jpg" class="card-img-top" alt="Card 1">
+              <img src="assets/img/card4 - copia.jpg" class="card-img-top" alt="Card 3">
               <div class="card-body">
                   <h5 class="card-title"></h5>
-                  <p style="color: red;"class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio consequuntur molestiae, perferendis praesentium assumenda reprehenderit sunt sit impedit! Beatae cupiditate, optio voluptatibus obcaecati non quo dignissimos nobis error iusto eos. Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-                  
+                  <p style="color: red;" class="card-text"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique quisquam consequuntur saepe recusandae illum pariatur illo aspernatur accusamus atque facilis, at voluptate iure quia quo ipsam repudiandae id iusto! Officia. Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+
               </div>
           </div>
-          
-      </div>
+        </div>
 
-      
-    <!-- *** COL  SEGUNDA TARJETA ***
-    ------------------------------ -->
-      <div class="col-3">
-          <div class="card">
-              <img src="assets/img/card2 - copia.jpg" class="card-img-top" alt="Card 2">
-              <div class="card-body">
-                  <h5 class="card-title"></h5>
-                  <p style="color: red;" class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim ut optio suscipit accusantium commodi harum fugit eligendi illum excepturi. Exercitationem, accusamus? Maxime placeat eveniet nostrum odio qui cumque veritatis doloremque. Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-                  
-              </div>
-          </div>
-      </div>
 
-      
-    <!-- *** COL TERCERA TARJETA ***
-    ------------------------------ -->
-      <div class="col-3">
-          <div class="card">
-              <img src="assets/img/card3 - copia.jpg" class="card-img-top" alt="Card 3">
-              <div class="card-body">
-                  <h5 class="card-title"></h5>
-                  <p style="color: red;" class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione possimus reiciendis natus. Dolore accusamus iusto cum aliquid rem eaque fugiat ad. Dignissimos pariatur eos sint nostrum ipsum. Accusantium, quisquam eos. Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-                  
-              </div>
-          </div>
-      </div>
 
-<!-- *** COL cuarta TARJETA ***
-    ------------------------------ -->
-    <div class="col-3">
-      <div class="card">
-          <img src="assets/img/card4 - copia.jpg" class="card-img-top" alt="Card 3">
-          <div class="card-body">
-              <h5 class="card-title"></h5>
-              <p style="color: red;" class="card-text"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique quisquam consequuntur saepe recusandae illum pariatur illo aspernatur accusamus atque facilis, at voluptate iure quia quo ipsam repudiandae id iusto! Officia. Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+    </div>
 
-          </div>
-      </div>
   </div>
 
-
-
-  </div>
-</div>
 
 <!-- **** A R E A   C O N T A C T O *****
 -------------------------------------- -->
@@ -257,7 +268,7 @@
 
 
 <br>
-<p><H3>CONTACTO</H3></p>
+<p><H3 id="contacto">CONTACTO</H3></p>
       <hr>  <!-- linea de separacion fina -->
 
       
@@ -284,6 +295,48 @@
   
   </section>
 
+<!-- **** A R E A   P I E   D E  P A G I N A *****
+-------------------------------------- ---------->
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <img src="assets/img/logo-letras-1.png" alt="Logo" class="logo">
+
+
+      <div class="social-icons">
+          <!-- **** PAG GITHUB ***** -->
+          <div>
+              <a href="https://github.com" target="_blank" title="Ir a la pagina de GITHUB"> <i class="fa-brands fa-github"></i> </a> 
+              
+          </div>
+         
+          <!-- **** PAG LINKEDIN ***** -->
+          <div>
+              <a href="https://linkedin.com" target="_blank"  title="Ir a la pagina de LINKEDIN"> <i class="fa-brands fa-linkedin-in"></i> </a> 
+                  
+          </div>
+
+         <!-- **** PAG 'X' ex-TWITTER  ***** -->
+          <div>
+              <a href="https://twitter.com" target="_blank"  title="Ir a la pagina de X (es TWITTER)"> <i class="fa-brands fa-twitter"></i> </a> 
+                      
+          </div>
+           <!-- **** PAG FACEBU ***** -->       
+          <div>
+                  <a href="https://Facebook.com" target="_blank"  title="Ir a la pagina de FACEBOOK"> <i class="fa-brands fa-facebook"></i> </a> 
+                          
+          </div>
+                                
+
+
+
+
+      </div>
+    </div>
+  </div>
+</footer>
 
 
 
@@ -293,10 +346,7 @@
 
 
 
-
-
-
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br>
 
 
 <!-- Scripts de Bootstrap (jQuery y Popper.js) -->

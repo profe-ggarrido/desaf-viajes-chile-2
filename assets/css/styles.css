@@ -11,33 +11,24 @@ header{
   padding: 0;
 }
 
-Estilos personalizados para el carrusel */
-#carouselExampleSlidesOnly {
-  height: 100vh; /* Hace que el carrusel ocupe toda la altura de la pantalla */
+
+/* *** AREA BARRA DE NAV *** */
+
+
+.nav-container {
+  width: 80%; /* Establece el ancho del contenedor al 80% del ancho de la página */
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+  
 }
-
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  color: #51e73e; /* Cambia el color de las flechas a blanco */
-}
-
-
-.carousel-item img {
-  width: 100%x;
-  height: 100vh; /* Para mantener la proporción de aspecto */
-  object-fit: cover; /* Escala las imágenes para que cubran toda el área del contenedor */
-}
-
-
-/* aCÁ PONEMOS TRANSP EL AREA */
 
 .navbar {
   background-color: transparent !important; /* Fondo transparente */
+  width: 100%;
+  align-self: center;
 }
 
 .navbar-toggler-icon {
-  background-color: white; /* Icono del botón de hamburguesa en blanco */
+  background-color: rgb(59, 118, 157); /* Icono del botón de hamburguesa en celeste */
 }
 
 .navbar-toggler {
@@ -52,7 +43,35 @@ Estilos personalizados para el carrusel */
 .navbar-brand img{
   width: 100px;
   border-radius: 5px;
+  margin-left: 50px;
 }
+
+ul{
+  margin-right: 10%;
+}
+
+
+
+
+
+/* Estilos personalizados para el carrusel  */
+
+#carouselExampleSlidesOnly {
+  height: 100vh; /* Hace que el carrusel ocupe toda la altura de la pantalla */
+}
+
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  color: #51e73e; /* Cambia el color de las flechas a blanco */
+}
+
+
+.carousel-item img {
+  width: 100%x;
+  height: 100vh; /* Para mantener la proporción de aspecto */
+  object-fit: cover; /* Escala las imágenes para que cubran toda el área del contenedor */
+}
+
 
 
 /* *** -- ZONA ¿QUIENES SOMOS? --**** */
@@ -69,8 +88,10 @@ hr{
 
 
 .container {
-  max-width: 80%; /* Establece el ancho máximo del contenedor */
+  width: 50%;
+ /* max-width: 70%;  Establece el ancho máximo del contenedor  de quienes*/
   margin: 0 auto; /* Centra el contenedor horizontalmente */
+
 }
 
 p{ 
@@ -87,6 +108,25 @@ p{
         text-align: center; /* Centra el contenido horizontalmente */
         padding: 10px; /* Espacio alrededor del icono */
     }
+
+/* *** ZONA DE 4 FOTOS "D E S T A C A D O S" *** */
+
+.custom-container{
+  width: 90%;
+  align-items: center;
+  margin-left: 55px;
+  display: flex;
+  justify-content: center;
+}
+
+
+.card {
+  margin-bottom: 10px; /* Espacio entre las tarjetas verticalmente */
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 5px;
+  height: 600px;
+}
 
 
 
@@ -131,6 +171,89 @@ input[type="text"] {
 .card-img-top {
   height: 300px;
 }
+
+ /* **** A R E A   P I E   D E  P A G I N A ***** ** */
+
+ .footer {
+  background-color: #bce3e3;
+  width: 100%;
+  padding: 20px 0; /* Espaciado superior e inferior */
+}
+
+.container {
+  width: 80%; /* Ancho del contenedor */
+  margin: 0 auto; /* Centrar el contenedor */
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 20%; /* Ancho del logo */
+}
+
+.social-icons {
+  width: 20%; /* Ancho del bloque de iconos */
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-icons a img {
+  width: 25px; /* Ancho de los iconos */
+}
+
+.footer {
+  background-color:  #1cd4fc ;
+  width: 100%;
+  padding: 20px 0; /* Espaciado superior e inferior */
+}
+
+.container {
+  width: 80%; /* Ancho del contenedor */
+  margin: 0 auto; /* Centrar el contenedor */
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 20%; /* Ancho del logo */
+  height: 85px;
+}
+
+.social-icons {
+  width: 30%; /* Ancho del bloque de iconos */
+  display: flex;
+  justify-content: space-between;
+ 
+}
+.social-icons a {
+  text-decoration: none; /* Para asegurarse de que no haya subrayado */
+}
+
+.social-icons a img {
+  display: block; /* Hacer que las imágenes sean elementos de bloque */
+  width: 40px;
+}
+
+.social-icons a span {
+  display: none; /* Ocultar el texto decorativo */
+}
+
+.social-icons a i {
+  font-size: 2em; /* Cambiar el tamaño de los iconos */
+}
+
+
+
+
+
 
 
 
