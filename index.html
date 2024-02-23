@@ -3,10 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/img/logo-viajes.png">
     <title>DES VIAJES CHILE-1</title>
 
     <!-- Enlace al archivo de estilos de Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
 
     
           <!-- Enlaces  FONTAAWESOME -->
@@ -205,7 +209,11 @@
                 <img src="assets/img/card1 - copia.jpg" class="card-img-top" alt="Card 1">
                 <div class="card-body">
                     <h5 class="card-title"></h5>
-                    <p style="color: rgb(0, 0, 0);"class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio consequuntur molestiae, perferendis praesentium assumenda reprehenderit sunt sit impedit! Beatae cupiditate, optio voluptatibus obcaecati non quo dignissimos nobis error iusto eos. Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                    <p style="color: rgb(0, 0, 0);"class="card-text">Lorem ipsum dolor, 
+                      sit amet consectetur adipisicing elit. Distinctio consequuntur molestiae,
+                       perferendis praesentium assumenda reprehenderit sunt sit impedit! Beatae
+                        cupiditate, optio voluptatibus obcaecati non quo dignissimos nobis error
+                        iusto eos. Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
                     
                 </div>
             </div>
@@ -220,7 +228,11 @@
                 <img src="assets/img/card2 - copia.jpg" class="card-img-top" alt="Card 2">
                 <div class="card-body">
                     <h5 class="card-title"></h5>
-                    <p style="color: rgb(0, 0, 0);" class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim ut optio suscipit accusantium commodi harum fugit eligendi illum excepturi. Exercitationem, accusamus? Maxime placeat eveniet nostrum odio qui cumque veritatis doloremque. Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                    <p style="color: rgb(0, 0, 0);" class="card-text">Lorem ipsum dolor, 
+                      sit amet consectetur adipisicing elit. Enim ut optio suscipit accusantium 
+                      commodi harum fugit eligendi illum excepturi. Exercitationem, accusamus?
+                       Maxime placeat eveniet nostrum odio qui cumque veritatis doloremque. 
+                       Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     
                 </div>
             </div>
@@ -234,7 +246,11 @@
                 <img src="assets/img/card3 - copia.jpg" class="card-img-top" alt="Card 3">
                 <div class="card-body">
                     <h5 class="card-title"></h5>
-                    <p style="color: rgb(0, 0, 0);" class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione possimus reiciendis natus. Dolore accusamus iusto cum aliquid rem eaque fugiat ad. Dignissimos pariatur eos sint nostrum ipsum. Accusantium, quisquam eos. Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                    <p style="color: rgb(0, 0, 0);" class="card-text"> Lorem ipsum dolor sit 
+                      amet consectetur adipisicing elit. Ratione possimus reiciendis natus. 
+                      Dolore accusamus iusto cum aliquid rem eaque fugiat ad. Dignissimos 
+                      pariatur eos sint nostrum ipsum. Accusantium, quisquam eos. Lorem ipsum dolor 
+                      sit amet, consectetur adipiscing elit...</p>
                     
                 </div>
             </div>
@@ -287,61 +303,86 @@
       </div>
       <div>
           <label for="mensaje">Mensaje: (* Obligarorio)</label><br>
-          <textarea id="mensaje" class="form-control" name="mensaje" rows="4" required></textarea>
+          <textarea id="mensaje" class="form-control" name="mensaje" rows="4" required></textarea><BR></BR>
       </div>
-      <button class="btn-enviar"  type="submit">Enviar</button>
+
+      <!-- BOTON BOOTSTRAP CON ALERT  -->
+
+      <a data-bs-toggle="mensaje" href="#"  title="Sr. usuari(a)o al pulsar aquì, le responderemos a la brevedad." 
+      class="btn btn-success custom-tooltip" onclick="mostrarAlerta('Sus datos fueron enviados correctamente')">Enviar</a>
+
+<!-- 
+       <a data-bs-toggle="mensaje" title="Enviar sus datos al servidor" class="btn btn-success"  onclick="mostrarAlerta('Enviar')">Enviar</a>
+      -->
+
+<!-- *** boton de bootstrap *** 
+<button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top"
+    data-bs-custom-class="custom-tooltip" data-bs-title="This top tooltip is themed via CSS variables.">
+    Enviar
+</button>
+-->
+
+
+      <!-- **** boton antiguo *** 
+      <button class="btn-enviar" type="submit">Enviar</button>
+-->
     </form>
 
   
   </section>
 
-<!-- **** A R E A   P I E   D E  P A G I N A *****
--------------------------------------- ---------->
+<!-- *****  FIN FORMULARIO DE CONTACTO**** -->
 
 
-<footer class="footer">
-  <div class="container">
-    <div class="footer-content">
-      <!-- ***** ELEMENTOS 'img' DENTRO DE 'a'  para volver al Inicio ***** -->
-      <a href="#">  <img src="assets/img/logo-letras-1.png" alt="Logo" class="logo"> </a>
 
 
-      <div class="social-icons">
-          <!-- **** PAG GITHUB ***** -->
-          <!-- ***** ELEMENTOS 'i' DENTRO DE 'a'  ***** -->
-          <div>           
-              <a href="https://github.com" target="_blank" title="Ir a la pagina de GITHUB"> <i class="fa-brands fa-github"></i></a> 
-              
-          </div>
-         
-          <!-- **** PAG LINKEDIN ***** -->
-          <div>
-              <a href="https://linkedin.com" target="_blank"  title="Ir a la pagina de LINKEDIN"> <i class="fa-brands fa-linkedin-in"></i> </a> 
-                  
-          </div>
+<!-- ********************* Z O N A    F O O T E R    ******************************** -->
 
-         <!-- **** PAG 'X' ex-TWITTER  ***** -->
-          <div>
-              <a href="https://twitter.com" target="_blank"  title="Ir a la pagina de X (es TWITTER)"> <i class="fa-brands fa-twitter"></i> </a> 
-                      
-          </div>
-           <!-- **** PAG FACEBU ***** -->       
-          <div>
-                  <a href="https://Facebook.com" target="_blank"  title="Ir a la pagina de FACEBOOK"> <i class="fa-brands fa-facebook"></i> </a> 
-                          
-          </div>
+
+
+
+<footer class="footer row pie-container">
+
+    
+
+    <div class="footer-content ">
+        <!-- ***** ELEMENTOS 'img' DENTRO DE 'a'  para volver al Inicio ***** -->
+        
+        <a href="#">  <img src="assets/img/logo-letras-1.png" alt="Logo" class="logo"> </a>
+
+
+        <div class="social-icons">
+            <!-- **** PAG GITHUB ***** -->
+            <!-- ***** ELEMENTOS 'i' DENTRO DE 'a'  ***** -->
+            <div>           
+                <a href="https://github.com" target="_blank" title="Ir a la pagina de GITHUB"> <i class="fa-brands fa-github"></i></a> 
+                
+            </div>
+        
+            <!-- **** PAG LINKEDIN ***** -->
+            <div>
+                <a href="https://linkedin.com" target="_blank"  title="Ir a la pagina de LINKEDIN"> <i class="fa-brands fa-linkedin-in"></i> </a> 
+                    
+            </div>
+
+        <!-- **** PAG 'X' ex-TWITTER  ***** -->
+            <div>
+                <a href="https://twitter.com" target="_blank"  title="Ir a la pagina de X (es TWITTER)"> <i class="fa-brands fa-twitter"></i> </a> 
+                        
+            </div>
+            <!-- **** PAG FACEBU ***** -->       
+            <div>
+                    <a href="https://Facebook.com" target="_blank"  title="Ir a la pagina de FACEBOOK"> <i class="fa-brands fa-facebook"></i> </a> 
+                            
+            </div>
                                 
+        </div>
 
+    </div>  <!-- *** fin DE class="footer-content"> -->
 
+    
 
-
-      </div>
-    </div>
-  </div>
 </footer>
-
-
-
 
 
 
@@ -354,8 +395,10 @@
 <!-- Scripts de Bootstrap (jQuery y Popper.js) -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+
 <!-- Script de Bootstrap -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
 </body>
 </html>
 

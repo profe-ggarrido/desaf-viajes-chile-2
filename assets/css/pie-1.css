@@ -1,0 +1,104 @@
+
+/* *** ZONA FOOTER *** */
+
+
+ /* **** A R E A   P I E   D E  P A G I N A ***** ** */
+
+ .footer {
+    background-color: #bce3e3;
+    width: 100%;
+    padding: 20px 0; /* Espaciado superior e inferior */
+  }
+  
+  .container {
+    width: 80%; /* Ancho del contenedor */
+    margin: 0 auto; /* Centrar el contenedor */
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 20%; /* Ancho del logo */
+  }
+  
+  .social-icons {
+    width: 20%; /* Ancho del bloque de iconos */
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .social-icons a img {
+    width: 25px; /* Ancho de los iconos */
+  }
+  
+  .footer {
+    background-color:  #1cd4fc ;
+    width: 100%;
+    padding: 20px 0; /* Espaciado superior e inferior */
+  }
+  /*
+  .container {
+    width: 80%;  Ancho del contenedor */
+    margin: 0 auto; /* Centrar el contenedor 
+  }
+  */
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  
+  
+  
+  .logo {
+    width: 20%; /* Ancho del logo */
+    height: 85px;
+  }
+  
+  .social-icons {
+    width: 30%; /* Ancho del bloque de iconos */
+    display: flex;
+    justify-content: space-between;
+   
+  }
+  .social-icons a {
+    text-decoration: none; /* Para asegurarse de que no haya subrayado */
+  }
+  
+  .social-icons a img {
+    display: block; /* Hacer que las imágenes sean elementos de bloque */
+    width: 40px;
+  }
+  
+  .social-icons a span {
+    display: none; /* Ocultar el texto decorativo */
+  }
+  
+  .social-icons a i {
+    font-size: 2em; /* Cambiar el tamaño de los iconos */
+  }
+  
+  
+  
+
+/* Para dispositivos con una anchura menor o igual a 500px */
+@media (max-width: 500px) {
+    .pie-container {
+      flex-direction: column; /* Alinea los elementos en forma vertical */
+      align-items: flex-start; /* Alinea los elementos al principio */
+    }
+  }
+  
+  /* Para dispositivos con una anchura mayor a 500px */
+  @media (min-width: 501px) {
+    .pie-container {
+      flex-direction: row; /* Mantiene los elementos en forma horizontal */
+      align-items: center; /* Alinea los elementos en el centro */
+    }
+  }
+  

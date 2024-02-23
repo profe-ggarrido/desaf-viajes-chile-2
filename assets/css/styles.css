@@ -92,6 +92,7 @@ hr{
   margin-right: 45px;
 }
 
+
 .container {
   width: 50%;
  /* max-width: 70%;  Establece el ancho máximo del contenedor  de quienes*/
@@ -178,6 +179,7 @@ input[type="text"] {
   height: 300px;
 }
 
+
  /* **** A R E A   P I E   D E  P A G I N A ***** ** */
 
  .footer {
@@ -198,10 +200,12 @@ input[type="text"] {
 }
 
 .logo {
+  margin-left: 25px;
   width: 20%; /* Ancho del logo */
 }
 
 .social-icons {
+  margin-right: 15px;
   width: 20%; /* Ancho del bloque de iconos */
   display: flex;
   justify-content: space-between;
@@ -217,16 +221,13 @@ input[type="text"] {
   padding: 20px 0; /* Espaciado superior e inferior */
 }
 
-.container {
-  width: 80%; /* Ancho del contenedor */
-  margin: 0 auto; /* Centrar el contenedor */
-}
-
 .footer-content {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+  flex-direction: column;
 }
+
 
 .logo {
   width: 20%; /* Ancho del logo */
@@ -259,33 +260,80 @@ input[type="text"] {
 
 
 
-
-
-
-
-
-
-
-
-
-@media (max-width: 768px) { 
-  .navbar-collapse {
-    background-color: rgb(216, 198, 198); 
-  }
-}
-
-
+/* Para dispositivos con una anchura menor o igual a 500px */
 @media (max-width: 500px) {
-  .quienes-container {
-      display: none; /* Oculta el FOOTER */
-      background-color: black;
+  .pie-container {
+    flex-direction: column; /* Alinea los elementos en forma vertical */
+    align-items: flex-start; /* Alinea los elementos al principio */
   }
 }
 
-
-@media (max-width: 768px) {
-  .container {
-      display: none; /* Oculta el FOOTER */
+/* Para dispositivos con una anchura mayor a 500px */
+@media (min-width: 501px) {
+  .pie-container {
+    flex-direction: row; /* Mantiene los elementos en forma horizontal */
+    align-items: center; /* Alinea los elementos en el centro */
   }
 }
+
+.custom-tooltip {
+  position: relative; /* Asegúrate de que el elemento tenga una posición relativa */
+}
+
+/* Estilos del tooltip */
+.custom-tooltip::after {
+  content: attr(title); /* Utiliza el contenido del atributo title como texto del tooltip */
+  position: absolute; /* Posición absoluta para superponer el tooltip */
+  /*bottom: 100%;  Colócalo encima del botón */
+  left: 50%; /* Centra el tooltip horizontalmente */
+  transform: translateX(-50%); /* Centra el tooltip horizontalmente */
+  padding: 8px 16px; /* Añade un poco de espacio alrededor del texto */
+  background-color: #1cd4fc; /* Fondo igual al footer solo por consecuencia */
+  color: white; /* Texto blanco */
+  font-family: Arial, sans-serif; /* Tipo de fuente */
+  font-size: 16px; /* Tamaño de fuente */
+  border-radius: 4px; /* Bordes redondeados */
+  white-space: nowrap; /* Evita que el texto se desborde a una nueva línea */
+  z-index: 1; /* Asegúrate de que el tooltip esté sobre el botón */
+  visibility: hidden; /* Inicialmente oculto */
+  opacity: 0; /* Inicialmente transparente */
+  transition: visibility 0s, opacity 0.3s ease; /* Transición suave de visibilidad */
+
+  margin-left: 20px;
+
+  max-width: 350px;
+  word-wrap: break-word;
+  white-space: normal;
+
+
+
+/* Ajusta la posición del tooltip */
+bottom: auto; /* Elimina la posición de abajo */
+top: 0; /* Coloca el tooltip en la parte superior */
+left: auto; /* Elimina la posición izquierda */
+right: 0; /* Coloca el tooltip en el extremo derecho */
+transform: translate(50%, -100%); /* Ajusta la posición de la transformación */
+}
+
+
+/* Muestra el tooltip al pasar el ratón sobre el botón */
+.custom-tooltip:hover::after {
+  visibility: visible; /* Muestra el tooltip */
+  opacity: 1; /* Hace el tooltip completamente visible */
+}
+
+
+
+
+
+
+
+/* 
+@media (max-width: 500px) {
+  .pie-container {
+      display: none; 
+      flex-direction: column;
+      align-items: flex-start;
+  }
+} */
 

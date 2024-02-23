@@ -1,0 +1,31 @@
+.custom-tooltip {
+  position: relative; /* Asegúrate de que el elemento tenga una posición relativa */
+}
+
+/* Estilos del tooltip */
+.custom-tooltip::after {
+  content: attr(title); /* Utiliza el contenido del atributo title como texto del tooltip */
+  position: absolute; /* Posición absoluta para superponer el tooltip */
+  bottom: 100%; /* Colócalo encima del botón */
+  left: 50%; /* Centra el tooltip horizontalmente */
+  transform: translateX(-50%); /* Centra el tooltip horizontalmente */
+  padding: 8px 16px; /* Añade un poco de espacio alrededor del texto */
+  background-color: blue; /* Fondo azul */
+  color: white; /* Texto blanco */
+  font-family: Arial, sans-serif; /* Tipo de fuente */
+  font-size: 16px; /* Tamaño de fuente */
+  border-radius: 4px; /* Bordes redondeados */
+  white-space: nowrap; /* Evita que el texto se desborde a una nueva línea */
+  z-index: 1; /* Asegúrate de que el tooltip esté sobre el botón */
+  visibility: hidden; /* Inicialmente oculto */
+  opacity: 0; /* Inicialmente transparente */
+  transition: visibility 0s, opacity 0.3s ease; /* Transición suave de visibilidad */
+
+  margin-left: 20px;
+}
+
+/* Muestra el tooltip al pasar el ratón sobre el botón */
+.custom-tooltip:hover::after {
+  visibility: visible; /* Muestra el tooltip */
+  opacity: 1; /* Hace el tooltip completamente visible */
+}
